@@ -10,7 +10,7 @@ namespace TeaApp.Models;
         [Required]
         public string Description { get; set; }
         [Required]
-        public TeaType Type { get; set; }
+        public string Type { get; set; }
         [Required]
         public string ImgUrl { get; set; }
         [Required]
@@ -24,11 +24,6 @@ namespace TeaApp.Models;
         [Required]
         public int Temperature { get; set; }
         
-
-        public enum TeaType
-        {
-            Mountain, Desert, Forest
-        }
 
 
     }
