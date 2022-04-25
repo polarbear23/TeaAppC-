@@ -1,0 +1,15 @@
+.App {
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template:
+    'header' 100px
+    'main' 1fr
+    'footer' 100px/
+    1fr;
+}
+
+.main {
+  grid-area: main;
+  max-width: 100vw;
+}

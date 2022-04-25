@@ -1,0 +1,98 @@
+.header {
+  grid-area: header;
+  display: grid;
+  width: 100vw;
+  height: 100px;
+  grid-template:
+    '. logo  navbar .' 1fr/
+    0.2fr 0.1fr 0.5fr 0.2fr;
+  background-color: var(--drkgreen);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  color: white;
+  backdrop-filter: blur(6px);
+}
+
+.navbar-logo-container {
+  grid-area: logo;
+  display: grid;
+  place-content: center;
+}
+
+.navbar-logo {
+  height: 75px;
+  width: 75px;
+}
+
+.navbar {
+  grid-area: navbar;
+  display: grid;
+  grid-template:
+    'left . right' 1fr/
+    0.6fr 0.2fr 0.3fr;
+}
+
+.navbar-list {
+  grid-area: left;
+  display: grid;
+  font-size: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-item {
+  display: grid;
+  cursor: pointer;
+  place-content: center;
+  font-variant: small-caps;
+}
+
+.navbar-item-cart {
+  display: grid;
+  position: relative;
+  cursor: pointer;
+  place-items: center;
+}
+
+.navbar-cart {
+  height: 55px;
+  fill: white;
+}
+
+.navbar-register-login-text {
+  font-size: 1.5rem;
+}
+
+.cart-number {
+  position: absolute;
+  color: green;
+  font-size: 1.5rem;
+  left: 42%;
+  top: 37%;
+}
+
+.navbar-item:hover,
+.navbar-item-cart:hover {
+  background-color: var(--topbar);
+  animation: pulseNav 1s;
+  box-shadow: 0 0 0 1rem transparent;
+}
+
+@keyframes pulseNav {
+  0% {
+    box-shadow: 0 0 0 0 var(--topbar);
+  }
+}
+
+.navbar-register-login-cart {
+  display: grid;
+  grid-area: right;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+}

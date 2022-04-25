@@ -1,0 +1,171 @@
+.homepage-carousel {
+  overflow: hidden;
+}
+
+.inner {
+  white-space: nowrap;
+  height: 800px;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel-item {
+  position: relative;
+  display: inline-flex;
+  align-items: left;
+  max-width: 100vw;
+  justify-content: left;
+  max-width: 100vw;
+  height: 100%;
+  color: black;
+}
+
+.tree {
+  background-color: var(--tree);
+}
+
+.mountain {
+  background-color: var(--mountain);
+}
+
+.desert {
+  background-color: var(--desert);
+}
+
+.carousel-title {
+  font-size: 4rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  height: 100px;
+  color: white;
+}
+
+.carousel-subtitle {
+  color: white;
+  position: absolute;
+  font-weight: 300;
+  font-size: 2rem;
+  top: 50%;
+  left: 70%;
+}
+
+.carousel-item-image {
+  height: 100%;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 70%;
+  left: 60%;
+}
+
+.carousel-btn-single {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+
+.carousel-btn,
+.carousel-btn-single {
+  color: white;
+  background-color: var(--desert);
+  border: solid 0.1rem;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 300;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
+  line-height: 1;
+  color: var(--btncolor);
+  transition: 0.25s;
+}
+
+.carousel-btn:hover,
+.carousel-btn-single:hover,
+.carousel-btn-single:focus,
+.carousel-btn:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+.carousel-btn:hover,
+.carousel-btn-single:hover,
+.carousel-btn-single:focus,
+.carousel-btn:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 1.5em transparent;
+}
+
+@media (30em <= width <= 2500px) {
+  .carousel-item-image {
+    height: 100%;
+  }
+
+  .inner {
+    white-space: nowrap;
+    height: 500px;
+    transition: transform 1s ease-in-out;
+  }
+
+  .carousel-title {
+    font-size: 3rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    height: 100px;
+    color: white;
+  }
+
+  .carousel-subtitle {
+    color: white;
+    position: absolute;
+    font-weight: 300;
+    font-size: 2rem;
+    top: 50%;
+    left: 65%;
+  }
+
+  .carousel-btn,
+  .carousel-btn-single {
+    color: white;
+    background-color: var(--desert);
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 1rem;
+    background: var(--desert);
+    border: solid 0.1rem;
+    cursor: pointer;
+    border-radius: 1rem 1rem 1rem 1rem;
+    line-height: 1;
+    color: var(--btncolor);
+    transition: 0.25s;
+  }
+
+  .carousel-btn-single {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+  }
+
+  .carousel-btn {
+    position: absolute;
+    top: 67%;
+    left: 60%;
+  }
+
+  .carousel-btn:hover,
+  .carousel-btn-single:hover,
+  .carousel-btn-single:focus,
+  .carousel-btn:focus {
+    border-color: var(--hover);
+    color: #fff;
+  }
+  .carousel-btn:hover,
+  .carousel-btn-single:hover,
+  .carousel-btn-single:focus,
+  .carousel-btn:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 1em transparent;
+  }
+}

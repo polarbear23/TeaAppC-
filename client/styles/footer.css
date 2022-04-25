@@ -1,0 +1,4 @@
+.footer {
+  grid-area: footer;
+  max-width: 100vw;
+}

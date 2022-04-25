@@ -1,0 +1,139 @@
+.teas-grid {
+  display: grid;
+  grid-template:
+    'searchbar' 0.1fr
+    '.' 0.2fr
+    'grid' 1fr/
+    1fr;
+}
+
+.teas-search-icon {
+  height: 25px;
+}
+
+.teas-search-btn {
+  grid-area: btn;
+  border: none;
+  padding: 0.5rem;
+  background-color: var(--drkgreen);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 10px, rgba(0, 0, 0, 0.12) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 2px 2px, rgba(0, 0, 0, 0.17) 0px 2px 3px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.teas-search-btn:hover {
+  cursor: pointer;
+}
+
+.teas-search-input {
+  grid-area: search;
+  width: 500px;
+  height: 60px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1rem 0rem 0rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 10px 10px, rgba(0, 0, 0, 0.12) 0px -10px 30px, rgba(0, 0, 0, 0.12) 0px 2px 2px, rgba(0, 0, 0, 0.17) 0px 2px 3px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 1rem;
+}
+
+.teas-search-form {
+  grid-area: searchbar;
+  display: grid;
+  grid-template:
+    '. search btn .' 1fr/
+    1fr 0.1fr 0.05fr 1fr;
+}
+
+.grid {
+  grid-area: grid;
+  display: grid;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 100px));
+}
+
+.tea-tile {
+  display: grid;
+  background-color: transparent;
+  height: 450px;
+  position: relative;
+  grid-template-rows: 1fr;
+  border-radius: 1.2rem;
+  perspective: 1000px;
+}
+
+.tea-tile-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.tea-tile:hover .tea-tile-inner {
+  transform: rotateY(180deg);
+}
+
+.tea-tile-arrow-down {
+  height: 30px;
+  position: absolute;
+  bottom: 1rem;
+  cursor: pointer;
+}
+
+.tea-tile-info {
+  display: grid;
+}
+
+.tea-tile-img-container {
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.tea-tile-info {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+
+.tea-info,
+.tea-tile-name {
+  background-color: rgba(180, 180, 170, 0.5);
+  font-size: 1.2rem;
+  color: rgb(31, 53, 61);
+}
+
+.tea-tile-name {
+  font-size: 2rem;
+  font-variant: small-caps;
+}
+
+.tea-tile-name {
+  border-radius: 1.2rem 1.2rem 0rem 0;
+}
+
+.tea-info {
+  padding: 1.5rem;
+  display: grid;
+  text-align: left;
+  border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+}
+
+.tea-info > span {
+  padding-left: 1rem;
+}

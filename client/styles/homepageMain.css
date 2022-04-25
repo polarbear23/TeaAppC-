@@ -1,0 +1,75 @@
+.homepage-main-image {
+  height: 100vh;
+  background-image: url('/public/images/tea1.jpg');
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+}
+
+.homepage-main-section {
+  display: grid;
+}
+
+.homepage-main-image-text-container {
+  padding-top: 10rem;
+
+  background-color: rgba(255, 251, 233, 0.4);
+}
+
+.homepage-main-image-title {
+  font-size: 2rem;
+  color: black;
+}
+
+.section-title {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 1.5rem;
+}
+
+.peppermint-tea-desc {
+  margin: 4rem;
+  font-size: 1.4rem;
+}
+
+.peppermint-tea-btn {
+  background-color: var(--drkgreen);
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem;
+  border: solid 0.1rem;
+  cursor: pointer;
+  border-radius: 1rem 1rem 1rem 1rem;
+  line-height: 1;
+  color: var(--btncolor);
+  transition: 0.25s;
+}
+
+.peppermint-tea-btn:hover,
+.peppermint-tea-btn:focus {
+  border-color: var(--drkgreen);
+  color: #fff;
+}
+
+.peppermint-tea-btn:hover,
+.peppermint-tea-btn:focus {
+  animation: pulsegreen 1s;
+  box-shadow: 0 0 0 1em transparent;
+}
+
+@keyframes pulsegreen {
+  0% {
+    box-shadow: 0 0 0 0 var(--drkgreen);
+  }
+}
+
+@media (30rem <= width <= 2500px) {
+  .homepage-main-image {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/public/images/tea1.jpg');
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
