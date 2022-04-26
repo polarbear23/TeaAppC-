@@ -1,0 +1,114 @@
+
+ [
+    {
+      "imgUrl": "/images/teas/blackFront.jpg",
+      "isOutOfStock": false,
+      "name": "Black Tea",
+      "description": "Black tea is a true tea that comes from the Camellia sinensis plant. Black tea leaves are allowed to fully oxidize before being processed and dried,the lown and gives the tea its signature flavor profile.",
+      "type": "Mountain",
+      "amountInStock": 100,
+      "origin": "India",
+      "brewTime": 5,
+      "temperature": 85
+    },
+    {
+      "imgUrl": "/images/teas/whiteFront.jpg",
+      "isOutOfStock": false,
+      "name": "White Tea",
+      "description": "White tea is made from the same plant as Black, Green and Oolong teas, but the leaves treated slightly differently. Unlike other varieties of tea, the youngest growth on the tea bush is picked for White teas – before the leaves have opened",
+      "type": "Mountain",
+      "amountInStock": 100,
+      "origin": "China",
+      "brewTime": 4,
+      "temperature": 70
+    },
+    {
+      "imgUrl": "/images/teas/greenFront.jpg",
+      "isOutOfStock": false,
+      "name": "Green Tea",
+      "description": "Green tea is 'unoxidized' tea. The leaves are heated soon after picking in order to destroy the enzymes that cause oxidation. This type of processing preserves a high level of antioxidants, vitamins, and minerals.",
+      "type": "Mountain",
+      "amountInStock": 100,
+      "origin": "China, Japan",
+      "brewTime": 4,
+      "temperature": 70
+    },
+    {
+      "imgUrl": "/images/teas/oolongFront.jpeg",
+      "isOutOfStock": false,
+      "name": "Oolong Tea",
+      "description": "Oolong tea is a traditional Chinese tea made from the partially oxidized leaves of the Camellia sinensis plant. Oolong is created when leaves are wilted in the sun and slightly bruised to create partial oxidation.",
+      "type": "Mountain",
+      "amountInStock": 100,
+      "origin": "China",
+      "brewTime": 3,
+      "temperature": 90
+    },
+    {
+      "imgUrl": "/images/teas/pu-erhFront.webp",
+      "isOutOfStock": false,
+      "name": "Pu-erh Tea",
+      "description": "Pu-erh tea is a unique type of fermented tea that is traditionally made in the Yunnan Province of China. It is made from the leaves of a tree known as the “wild old tree,” which grows in the region.",
+      "type": "Mountain",
+      "amountInStock": 100,
+      "origin": "China",
+      "brewTime": 3,
+      "temperature": 90
+    },
+    {
+      "imgUrl": "/images/teas/borichaFront.jpg",
+      "isOutOfStock": false,
+      "name": "Boricha Barley Tea",
+      "description": "Boricha tea is a grain-infusion made with roasted barley, it is not a “true” tea. In regard to flavor, it tastes nutty, smoky, and slightly bitter. In Korea, the tea is consumed either hot or cold.",
+      "type": "Desert",
+      "amountInStock": 100,
+      "origin": "Korea",
+      "brewTime": 10,
+      "temperature": 100
+    },
+    {
+      "imgUrl": "/images/teas/chagaFront.webp",
+      "isOutOfStock": false,
+      "name": "Chaga Tea",
+      "description": "This particular drink originates in the Russian/Siberian region. Chaga mushrooms are a type of fungus that grows on birch trees, and making them into tea simply involves boiling a piece of the dried mushroom, it has a slightly bitter taste",
+      "type": "Forest",
+      "amountInStock": 100,
+      "origin": "Russia/Siberia",
+      "brewTime": 12,
+      "temperature": 80
+    },
+    {
+      "imgUrl": "/images/teas/chamomileFront.webp",
+      "isOutOfStock": false,
+      "name": "Chamomile Tea",
+      "description": "Chamomile tea comes from the edible flowers of the Matricaria chamomilla plant, otherwise known as chamomile. This drink has a reputation for being a good bedtime beverage. It is one of the most popular types of tea and it has a mild bitterness with a light, floral, and slightly sweet taste.",
+      "type": "Desert",
+      "amountInStock": 100,
+      "origin": "Egypt",
+      "brewTime": 5,
+      "temperature": 70
+    },
+    {
+      "imgUrl": "/images/teas/hibiscusFront.webp",
+      "isOutOfStock": false,
+      "name": "Hibiscus Tea",
+      "description": "Hibiscus is a tea made from the dried petals of the roselle flower. Resembling the flower’s color, hibiscus tea is dark blood-red, and it has a tart flavor and a flowery smell. Overall, the tea is enjoyable and refreshing to drink, but some people may find it slightly sour.",
+      "type": "Desert",
+      "amountInStock": 100,
+      "origin": "Africa, China",
+      "brewTime": 3,
+      "temperature": 90
+    },
+    {
+      "imgUrl": "/images/teas/honeybushFront.jpg",
+      "isOutOfStock": false,
+      "name": "Honeybush Tea",
+      "description": "Honeybush is a fermented type of tea with a relatively strong and flavorful taste. Fermented leaves and stems of the honeybush shrub are used to brew honeybush tea. The tea is also naturally caffeine-free. Honeybush has a mildly sweet taste.",
+      "type": "Mountain",
+      "amountInStock": 100,
+      "origin": "South Africa",
+      "brewTime": 4,
+      "temperature": 93
+    }
+  ]
+

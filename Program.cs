@@ -26,6 +26,19 @@ builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
+
+using var serviceScope = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope();
+
+try
+{
+    MyDbContext context = serviceScope.ServiceProvider.GetRequiredService<MyDbContext>();
+    DataSeeder.Seed(context).Wait();
+}
+catch (Exception ex)
+{
+
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
